@@ -1,0 +1,38 @@
+{
+  "plugins": ["transform-class-properties", "syntax-decorators", "transform-decorators-legacy"],
+  "env": {
+    "development": {
+      "presets": [
+        ["env", { "targets": { "node": true } }],
+        ["es2015", { "modules": false }],
+        "stage-0",
+        "react"
+      ],
+      "plugins": ["transform-react-jsx-self", "transform-react-jsx-source"]
+    },
+    "production": {
+      "presets": [
+        ["env", { "targets": { "node": true } }],
+        ["es2015", { "modules": false }],
+        "stage-0",
+        "react"
+      ],
+      "plugins": [
+        "transform-remove-strict-mode",
+        "transform-react-remove-prop-types",
+        "transform-react-constant-elements",
+        "transform-react-pure-class-to-function",
+        "transform-react-inline-elements"
+      ]
+    },
+    "test": {
+      "presets": [
+        ["env", { "targets": { "node": true } }],
+        ["es2015", { "modules": false }],
+        "stage-0",
+        "react"
+      ],
+      "plugins": ["transform-es2015-modules-commonjs"]
+    }
+  }
+}

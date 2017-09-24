@@ -1,0 +1,91 @@
+.formInput {
+  cursor: pointer;
+  display: block;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.222222222222222;
+  color: #455358;
+  line-height: 24px;
+  margin-top: 1.5rem;
+  /*align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  width: 100%;*/
+}
+
+.formInput textarea,
+.formInput input {
+  border-color: transparent;
+  padding-bottom: 0.375rem;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #455358;
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  color: #2d3639;
+  cursor: text;
+  flex: 1 1 auto;
+  font: inherit;
+  letter-spacing: 1.4px;
+  line-height: inherit;
+  outline: none;
+  text-align: inherit;
+  white-space: pre-wrap;
+  width: 100%;
+  word-break: break-word;
+  display: block;
+}
+
+.formInput textarea {
+  min-height: 8rem;
+  max-height: 10rem;
+  display: block;
+}
+
+.formInput textarea:focus,
+.formInput input:focus {
+  border-bottom-color: #ffcd1f;
+}
+
+.formInput textarea::placeholder,
+.formInput input::placeholder {
+  color: #c0cace;
+  font-weight: 300;
+  /*color: #fff;*/
+}
+
+.formInputActive {
+  color: #97a5aa;
+  letter-spacing: 1px;
+  border-bottom-color: #ffcd1f;
+}
+
+.formInput label {
+  color: #97a5aa;
+  display: block;
+  padding-top: 0.625rem;
+  text-align: inherit;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.333333333333333;
+  font-size: 0.75rem;
+  letter-spacing: 0.0625rem;
+  border-top: 2px solid transparent;
+}
+
+.formInput textarea:focus + label,
+.formInput input:focus + label {
+  border-top-color: #ffcd1f;
+}
+
+.formInputError input,
+.formInputError textarea {
+  border-bottom-color: #ff725b;
+}
+
+.formInputError label {
+  color: #ff725b;
+  border-top-color: #ff725b;
+}

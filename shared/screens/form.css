@@ -1,0 +1,64 @@
+.submitOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  position: relative;
+}
+
+.form fieldset {
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  /*border-top: 0.125rem solid #dadee0;*/
+  border-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 2rem;
+}
+
+.form legend {
+  /*text-align: center;
+   color: #97a5aa;
+     padding: 0 1.5rem;
+     text-transform: uppercase;
+    font-size: 0.75rem;
+   */
+  color: #4257b2;
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+
+  font-weight: bold;
+}
+
+fieldset .submitBox {
+  margin-top: 3rem;
+}
+
+fieldset > button,
+.submitBox > button {
+  display: block;
+  width: 100%;
+}
+
+.formCol {
+  padding: 3rem 5rem 3rem 0;
+}
+
+.radio {
+  position: relative;
+}
+
+@media screen and (max-width: 38.75em) {
+  .formCol {
+    padding: 1.5rem 0;
+  }
+}
